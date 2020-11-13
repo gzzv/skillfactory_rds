@@ -145,5 +145,5 @@ output_columns = list(filter(None, output_columns))
 output_columns = output_columns + quant_columns_list
 
 
-# Датасет для дальнейшего построения мрдели
+# Датасет для дальнейшего построения модели
 study_data_for_model = study_data[output_columns]
