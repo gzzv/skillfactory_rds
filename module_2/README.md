@@ -19,11 +19,11 @@ from scipy.stats import ttest_ind
   - Подготовка функций для обработки данных
     ```sh
     def clean_func(data):
-    """Функция для замены значения ячеек 'nan' на 'None' для столбцов типа 'object'
-    и на наиболее часто встречающееся значение для столбцов типа 'int' и 'float'"""
+      """Функция для замены значения ячеек 'nan' на 'None' для столбцов типа 'object'
+      и на наиболее часто встречающееся значение для столбцов типа 'int' и 'float'"""
     
-    clear_data = pd.DataFrame()
-    for col in data.iteritems():
+      clear_data = pd.DataFrame()
+      for col in data.iteritems():
         if col[1].dtypes == 'object':
             temp_s = col[1].where(pd.notnull(col[1]), None)
             clear_data = pd.concat([clear_data, temp_s], axis=1)
@@ -31,52 +31,53 @@ from scipy.stats import ttest_ind
             temp_s = col[1].replace({np.nan: col[1].value_counts().index[0]})
             clear_data = pd.concat([clear_data, temp_s], axis=1)
             
-    return clear_data
-    def get_distplot(data, column):
-    """Функция для создания графиков distplot"""
+      return clear_data
     
-    fig, ax = plt.subplots(figsize = (8, 4))
-    sns.distplot(data[column])
-    plt.show()
+    def get_distplot(data, column):
+      """Функция для создания графиков distplot"""
+    
+      fig, ax = plt.subplots(figsize = (8, 4))
+      sns.distplot(data[column])
+      plt.show()
  
     
     def anomaly_del_func(data):
-    """Функция для удаления выбросов. 
-    Возвращает маску, с помощью которой можно удалить выбросы"""
+      """Функция для удаления выбросов. 
+      Возвращает маску, с помощью которой можно удалить выбросы"""
     
-    iqr = data.quantile(0.75) - data.quantile(0.25)
-    q1 = data.quantile(0.25)
-    q3 = data.quantile(0.75)
-    mask = data.between(q1 - 1.5*iqr, q3 + 1.5*iqr)
+      iqr = data.quantile(0.75) - data.quantile(0.25)
+      q1 = data.quantile(0.25)
+      q3 = data.quantile(0.75)
+      mask = data.between(q1 - 1.5*iqr, q3 + 1.5*iqr)
     
-    return mask
+      return mask
 
     
     def get_boxplot(data, column):
-    """Функция для создания графиков boxplot"""
+      """Функция для создания графиков boxplot"""
     
-    fig, ax = plt.subplots(figsize = (8, 4))
-    sns.boxplot(x = column, y = 'score', data = data, ax=ax)
-    plt.xticks(rotation = 45)
-    plt.show()
+      fig, ax = plt.subplots(figsize = (8, 4))
+      sns.boxplot(x = column, y = 'score', data = data, ax=ax)
+      plt.xticks(rotation = 45)
+      plt.show()
 
 
     def get_pointplot(data, column):
     """Функция для создания графиков pointplot"""
     
-    fig, ax = plt.subplots(figsize = (6, 3))
-    sns.pointplot(x = column, y = 'score', data = data, capsize = 0.2)
-    plt.show()
+      fig, ax = plt.subplots(figsize = (6, 3))
+      sns.pointplot(x = column, y = 'score', data = data, capsize = 0.2)
+      plt.show()
     
 
     def get_stat_dif(data, column):
-    """Функция для расчета p_value критерия Стьюдента
-    Печатает имена колонок со статистически значимыми различиями, 
-    p_value для этих колонок, возвращает сами колонки"""
+      """Функция для расчета p_value критерия Стьюдента
+      Печатает имена колонок со статистически значимыми различиями, 
+      p_value для этих колонок, возвращает сами колонки"""
     
-    col = data[column].value_counts().index
-    combinations_all = list(combinations(col, 2))
-    for comb in combinations_all:
+      col = data[column].value_counts().index
+      combinations_all = list(combinations(col, 2))
+      for comb in combinations_all:
         if ttest_ind(data[data[column] == comb[0]].score,
                      data[data[column] == comb[1]].score).pvalue \
             <= 0.05/len(combinations_all):
