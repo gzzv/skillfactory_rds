@@ -16,7 +16,7 @@
     Некоторые количественные переменные содержат выбросы:
     * age
     
-    ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/image.pngscreenshots/module_2_age.png/)
+    ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_age.png/)
     
     * Fedu
     * absences
