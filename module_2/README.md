@@ -37,6 +37,10 @@
   Построим матрицу корреляций для количественных переменных
   
   ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_corr_matrix.png/)
+  
+  Из матрицы видно, что переменные 'studytime' и 'studytime, granular' коррелируют между собой. Поэтому можно удалить переменную 'studytime, granular'.
+  
+  Среди номинативных переменных только 'Pstatus', 'Mjob', 'Fjob', 'reason' имеют более 2 уникальных значения. 
 
 ### Вопросы саморефлексии:
 1. Какова была ваша роль в команде?
