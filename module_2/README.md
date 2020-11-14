@@ -49,6 +49,7 @@
 'schoolsup' (p = 4.8e-07) оказывают наибольшее влияние на переменную 'score'
 
   * sex
+  
   ![sex boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_sex.png/)
   ![sex pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_sex_pointplot.png/)
   
