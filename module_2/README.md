@@ -16,11 +16,17 @@
     Некоторые количественные переменные содержат выбросы:
     * age
     ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_age.png/)
+    
     * Fedu
+    
     ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Fedu.png/)
+    
     * absences
+    
     ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_absences.png/)
+    
     * score
+    
     ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_score.png/)
     
     Выбросы в первых трех переменных удаляем с помощью квантилей, для переменной score оставляем значения больше 20.
