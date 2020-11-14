@@ -14,6 +14,7 @@
   - Удаление выбросов количественных переменных
     
     Некоторые количественные переменные содержат выбросы:
+    
     * age
     
     ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_age.png/)
@@ -46,6 +47,7 @@
   
   Анализ графиков boxplot и pointplot, а также критерия Стьюдента номинативных переменных показал, что переменные 'sex' (p = 0.027), 'address' (p = 0.009), 'Mjob' (p = 0.001),
 'schoolsup' (p = 4.8e-07) оказывают наибольшее влияние на переменную 'score'
+
   * sex
   ![sex boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_sex.png/)
   ![sex pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_sex_pointplot.png/)
