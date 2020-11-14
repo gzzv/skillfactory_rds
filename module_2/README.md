@@ -32,9 +32,7 @@ from scipy.stats import ttest_ind
             clear_data = pd.concat([clear_data, temp_s], axis=1)
             
     return clear_data
-
-
-def get_distplot(data, column):
+    def get_distplot(data, column):
     """Функция для создания графиков distplot"""
     
     fig, ax = plt.subplots(figsize = (8, 4))
@@ -42,7 +40,7 @@ def get_distplot(data, column):
     plt.show()
  
     
-def anomaly_del_func(data):
+    def anomaly_del_func(data):
     """Функция для удаления выбросов. 
     Возвращает маску, с помощью которой можно удалить выбросы"""
     
@@ -54,7 +52,7 @@ def anomaly_del_func(data):
     return mask
 
     
-def get_boxplot(data, column):
+    def get_boxplot(data, column):
     """Функция для создания графиков boxplot"""
     
     fig, ax = plt.subplots(figsize = (8, 4))
@@ -63,7 +61,7 @@ def get_boxplot(data, column):
     plt.show()
 
 
-def get_pointplot(data, column):
+    def get_pointplot(data, column):
     """Функция для создания графиков pointplot"""
     
     fig, ax = plt.subplots(figsize = (6, 3))
@@ -71,7 +69,7 @@ def get_pointplot(data, column):
     plt.show()
     
 
-def get_stat_dif(data, column):
+    def get_stat_dif(data, column):
     """Функция для расчета p_value критерия Стьюдента
     Печатает имена колонок со статистически значимыми различиями, 
     p_value для этих колонок, возвращает сами колонки"""
