@@ -20,15 +20,15 @@
     
     * Fedu
     
-    ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Fedu.png/)
+    ![Fedu hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Fedu.png/)
     
     * absences
     
-    ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_absences.png/)
+    ![absences hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_absences.png/)
     
     * score
     
-    ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_score.png/)
+    ![score hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_score.png/)
     
     Выбросы в первых трех переменных удаляем с помощью квантилей, для переменной score оставляем значения больше 20.
   
@@ -36,7 +36,7 @@
   
   Построим матрицу корреляций для количественных переменных
   
-  ![age hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_corr_matrix.png/)
+  ![corr matrix](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_corr_matrix.png/)
   
   Из матрицы видно, что переменные 'studytime' и 'studytime, granular' коррелируют между собой. Поэтому можно удалить переменную 'studytime, granular'.
   
@@ -47,16 +47,23 @@
   Анализ графиков boxplot и pointplot, а также критерия Стьюдента номинативных переменных показал, что переменные 'sex' (p = 0.027), 'address' (p = 0.009), 'Mjob' (p = 0.001),
 'schoolsup' (p = 4.8e-07) оказывают наибольшее влияние на переменную 'score'
   * sex
-  
+  ![sex boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_sex.png/)
+  ![sex pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_sex_pointplot.png/)
   
   * address
   
+  ![address boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_address.png/)
+  ![address pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_address_pointplot.png/)
   
   * Mjob
   
+  ![Mjob boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Mjob.png/)
+  ![Mjob pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Mjob_pointplot.png/)
   
   * schoolsup
   
+  ![schoolsup boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_schoolsup.png/)
+  ![schoolsup pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_schoolsup_pointplot.png/)
   
 
 ### Вопросы саморефлексии:
