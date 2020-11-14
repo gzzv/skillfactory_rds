@@ -15,6 +15,8 @@
     
     Некоторые количественные переменные содержат выбросы:
     * age
+    ![age hist](screenshots/module_2_age)
+    
     * Fedu
     * absences
     * score
