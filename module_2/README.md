@@ -27,11 +27,8 @@
     
     ![absences hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_absences.png/)
     
-    * score
     
-    ![score hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_score.png/)
-    
-    Выбросы в первых трех переменных удаляем с помощью квантилей, для переменной score оставляем значения больше 20.
+    Выбросы в первых трех переменных можно выявить и удалить с помощью квартилей и межквартильного размаха.
   
   - **Корреляционный анализ**
   
@@ -46,7 +43,7 @@
   Среди номинативных переменных только 'Pstatus', 'Mjob', 'Fjob', 'reason' имеют более 2 уникальных значений.
   
   Анализ графиков boxplot и pointplot, а также критерия Стьюдента номинативных переменных показал, что переменные 'sex' (p = 0.027), 'address' (p = 0.009), 'Mjob' (p = 0.001),
-'schoolsup' (p = 4.8e-07) оказывают наибольшее влияние на переменную 'score'
+'paid' (p = 0.039), 'higher' (p = 0.0004), 'romantic (p = 0.007)' оказывают наибольшее влияние на переменную 'score'
 
   * sex
   
@@ -63,10 +60,17 @@
   ![Mjob boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Mjob.png/)
   ![Mjob pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_Mjob_pointplot.png/)
   
-  * schoolsup
+  * paid
   
   ![schoolsup boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_schoolsup.png/)
   ![schoolsup pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_schoolsup_pointplot.png/)
+  
+  * higher
+  
+  * romantic
+  
+  
+  
   
   - **Выводы**
   
