@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Описание и выводы по проекту находятся в файле README
-
 # Импорт требуемых библиотек
 
 import pandas as pd
@@ -92,6 +88,8 @@ study_data = clean_func(study_data)
 study_data = study_data[anomaly_del_func(study_data.age)]
 study_data = study_data[anomaly_del_func(study_data.Fedu)]
 study_data = study_data[anomaly_del_func(study_data.absences)]
+study_data = study_data[anomaly_del_func(study_data.score)]
+study_data = study_data[study_data.score > 20]
 
 
 # Создание списков с именами столбцов разных типов
@@ -118,7 +116,7 @@ sns.heatmap(study_data.corr(), annot = True, cmap = 'coolwarm', linewidths = 0.5
 
 # Удаление коррелирующих переменных
 study_data.drop(['studytime, granular'], inplace = True, axis = 1)
-
+quant_columns_list.remove('studytime, granular')
 
 # Печать уникальных значений для номинативных переменных
 for item in nom_columns_list:
@@ -141,8 +139,9 @@ for col in nom_columns_list:
     output_columns.append(get_stat_dif(study_data, col))
 
 output_columns = list(filter(None, output_columns)) 
-output_columns = output_columns + quant_columns_list
+output_columns = output_columns + list(set(quant_columns_list) - 
+                                       set(['traveltime', 'famrel', 'freetime']))
 
 
-# Датасет для дальнейшего построения модели
+# Датасет для дальнейшего построения мрдели
 study_data_for_model = study_data[output_columns]

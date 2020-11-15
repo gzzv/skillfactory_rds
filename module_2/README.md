@@ -28,7 +28,7 @@
     ![absences hist](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_absences.png/)
     
     
-    Выбросы в первых трех переменных можно выявить и удалить с помощью квартилей и межквартильного размаха.
+    Выбросы в этих переменных можно выявить и удалить с помощью квартилей и межквартильного размаха.
   
   - **Корреляционный анализ**
   
@@ -36,7 +36,8 @@
   
   ![corr matrix](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_corr_matrix.png/)
   
-  Из матрицы видно, что переменные 'studytime' и 'studytime, granular' коррелируют между собой. Поэтому можно удалить переменную 'studytime, granular'.
+  Из матрицы видно, что переменные 'studytime' и 'studytime, granular' коррелируют между собой. Поэтому можно удалить переменную 'studytime, granular'. Также глядя на матрицу можно сделать вывод, 
+  что переменные 'traveltime', 'famrel', 'freetime' мало коррелируют с оценкой по математике. Эти переменные можно не включать в итоговую таблицу для дальнейшего использования в построении модели.  
   
   - **Выявление номинативных переменных, влияющих на оценку по математике**
   
@@ -62,18 +63,24 @@
   
   * paid
   
-  ![schoolsup boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_schoolsup.png/)
-  ![schoolsup pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_schoolsup_pointplot.png/)
+  ![paid boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_paid.png/)
+  ![paid pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_paid_pointplot.png/)
   
   * higher
   
+  ![higher boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_higherpng/)
+  ![higher pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_higher_pointplot.png/)
+  
   * romantic
   
-  
-  
+  ![romantic boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_romantic.png/)
+  ![romantic pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_romantic_pointplot.png/)
   
   - **Выводы**
   
+  Разведовательный анализ данных об условиях жизни учащихся покзал, что не все переменные оказывают значимое влияние на оценку по математике. Список самых важных переменных, 
+  которые решено оставить для дальнейшего использования: 'sex', 'address', 'Mjob', 'paid', 'higher', 'romantic', 'age', 'health', 'absences', 'Medu', 'goout', 'failures',
+ 'Fedu', 'studytime', 'score'
 
 ### Вопросы саморефлексии:
 1. Какова была ваша роль в команде?
