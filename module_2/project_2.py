@@ -92,7 +92,6 @@ study_data = clean_func(study_data)
 study_data = study_data[anomaly_del_func(study_data.age)]
 study_data = study_data[anomaly_del_func(study_data.Fedu)]
 study_data = study_data[anomaly_del_func(study_data.absences)]
-study_data = study_data[study_data.score > 20]
 
 
 # Создание списков с именами столбцов разных типов
