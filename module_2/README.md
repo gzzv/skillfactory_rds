@@ -68,7 +68,7 @@
   
   * higher
   
-  ![higher boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_higherpng/)
+  ![higher boxplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_higher.png/)
   ![higher pointplot](https://github.com/gzzv/skillfactory_rds/raw/master/screenshots/module_2_higher_pointplot.png/)
   
   * romantic
