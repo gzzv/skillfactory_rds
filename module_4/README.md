@@ -1,3 +1,3 @@
-# module_3
+# module_4
 Описание к проекту находится на kaggle
-https://www.kaggle.com/ildargazizov/baseline-sf-tripadvisor-rating-v2-7-gzzv/notebook?scriptVersionId=50564390&select=submission.csv
+https://www.kaggle.com/ildargazizov/sf-dst-credit-scoring?scriptVersionId=53199858
